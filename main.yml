@@ -1,0 +1,35 @@
+name: Scheduled Workflow
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 17 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: pip install requests
+    - name: Run Python Script
+      run: python main.py
+    - name: Delete files
+      run: |
+        rm list.txt
+        rm data/V2.txt
+        rm data/UpdateTime.txt
+    - name: Push changes
+      run: |
+        git config --local user.email "ssili@126.com"
+        git config --local user.name "ssili126"
+        git add .
+        git commit -m "Update files"
+        git push -f
