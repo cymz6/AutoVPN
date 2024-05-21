@@ -21,8 +21,6 @@ jobs:
     - name: Delete files
       run: |
         rm list.txt
-        rm data/V2.txt
-        rm data/UpdateTime.txt
     - name: Push changes
       run: |
         git config --local user.email "ssili@126.com"
