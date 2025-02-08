@@ -5,8 +5,8 @@ from datetime import datetime
 from zipfile import ZipFile, ZIP_DEFLATED
 
 # Download list.txt from GitHub
-//list_url = "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
-list_url = "https://raw.githubusercontent.com/cymz6/NoMoreWalls/refs/heads/master/list.txt"
+list_url = "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
+//list_url = "https://raw.githubusercontent.com/cymz6/NoMoreWalls/refs/heads/master/list.txt"
 response = requests.get(list_url)
 with open("list.txt", "wb") as file:
     file.write(response.content)
