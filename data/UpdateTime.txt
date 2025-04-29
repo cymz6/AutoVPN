@@ -1,1 +1,120 @@
-{"sysTime2":"2025-04-29 01:21:08","sysTime1":"20250429012108"}
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="keywords" content="è¯·æ±å¼å¸¸é¡µé¢"/>
+<meta name="description" content="èå®æè´­è¯·æ±å¼å¸¸é¡µé¢" />
+<title>è¯·æ±å¼å¸¸é¡µé¢</title>
+ <script type="text/javascript">
+ var sn = sn || {'context': '/emall', 'domain': 'www.suning.com','storeId': '10052','catalogId': '10051','memberDomain':'member.suning.com','online':'online.suning.com','cookieDomain':'.suning.com','categoryId':'0','searchDomain':'http://search.suning.com/emall/','sslDomain':'ssl.suning.com'};
+ </script>
+<!-- PRFLS RESOURCES -->
+<link rel="shortcut icon" href="//ssl.suning.com/favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="//res.suning.cn/public/v3/css/??v3common.min.css,search.min.css,sn-sidebar.min.css?v=2015121601"/>
+<script type="text/javascript" src="//res.suning.cn??/public/v3/js/jquery.js,/public/v3/js/sn_lazyload.js,/public/v3/js/lazyelem.min.js,/public/v3/js/SFE.base.min.js,/public/v3/js/search.min.js,/public/sidebar/build/js/sn-sidebar.min.js,/project/yunxin/js/chatCompat_mini.js?v=2015121601"></script>
+<link rel="stylesheet" href="//res.suning.cn/project/cmsWeb/suning/common404/css/404.css?v=20151218116020" />
+<link rel="stylesheet" type="text/css" href="//res.suning.cn/project/pdsWeb/wapV3/style/fourth-oversea.css?v=2018051200">
+
+ <style>
+ .ng-toolbar, .ng-toolbar .ng-bar-node, a.ng-close{
+	line-height: 60px;
+    height: 60px;
+ }
+ .ng-toolbar .ng-bar-node i.ng-backhome,
+ .ng-toolbar .ng-bar-node em.cart{
+	line-height: 60px;
+ }
+ .err-area dd p a{
+	margin: 0
+ }
+ @media(max-width:768px){
+	.ng-toolbar,.wrapper,.err-area{
+	    width: 100% !important;
+    min-width: 100% !important;
+	
+ }
+ }
+ 
+ </style>
+</head>
+<body>
+<script type="text/javascript">
+//å®½çªå±åæ¢
+var bigscreen = false;
+if ( screen.width>=1200 ) {
+bigscreen = true;
+var bodyTag = document.getElementsByTagName("body")[0],
+bodyClassName = bodyTag.getAttribute("className") || bodyTag.getAttribute("class");
+bodyClassName = bodyClassName ? bodyClassName+" " : "";
+bodyTag.className = bodyClassName+"root1200";
+}
+</script>
+<div class="ng-toolbar" style="border-bottom: 2px solid #FF9900;" id="pc-toolbar">
+<div class="ng-toolbar-con wrapper">
+<div class="ng-toolbar-left">
+<div class="ng-bar-node-box ng-msg-box" style="padding-top: 5px;margin-right: 30px;">
+<a href="http://www.suning.com/" class="ng-logo">
+<img src="http://res.suning.cn/public/v3/images/logo/snlogo.png?v=2015042703" height="50" width="95" alt="èå®æè´­"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<header class="fourth-header" id="fourthHeader" style="display:none">
+  <div class="sn-nav">
+    <div class="sn-nav-back">
+      <a data-name="prodDetail_none_main_back" href="http://www.suning.com/"></a>
+    </div>
+    <div class="sn-nav-main" id="nav_title_switch"> <span data="prodDetail_none_main_details">ååè¯¦æ</span> 
+    </div>
+  </div>
+</header>
+<script>
+  var browser={
+    versions:function(){
+      var u = navigator.userAgent, app = navigator.appVersion;
+      return {
+        trident: u.indexOf('Trident') > -1,
+        presto: u.indexOf('Presto') > -1,
+        webKit: u.indexOf('AppleWebKit') > -1,
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+        iPhone: u.indexOf('iPhone') > -1 ,
+        iPad: u.indexOf('iPad') > -1,
+        webApp: u.indexOf('Safari') == -1,
+        weixin: u.indexOf('MicroMessenger') > -1,
+        qq: u.match(/\sQQ/i) == " qq"
+      };
+    }(),
+    language:(navigator.browserLanguage || navigator.language).toLowerCase()
+  }
+
+  if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||
+    browser.versions.iPhone || browser.versions.iPad){
+          $("#pc-toolbar").hide();
+  	  $("#fourthHeader").show();
+  }else{
+    $("#pc-toolbar").show();
+  	  $("#fourthHeader").hidden();
+  }
+</script>
+
+<div class="error-wrapper">
+<div class="wrapper">
+<dl class="err-area clearfix" style="padding-top:100px">
+  <dt>
+     <img src="//res.suning.cn/project/cmsWeb/suning/common404/images/404.jpg" width="286" height="182" alt="404">
+     <p>å½åé¡µé¢è®¿é®äººæ°è¿å¤ï¼è¯·æ¨ç¨ååè¯ï¼</p>
+  </dt>
+  <dd class="clearfix">
+     <p><a href="http://www.suning.com/">è¿åé¦é¡µ</a></p>
+  </dd>
+</dl>
+</div>
+</div>
+<div class="clear"></div>
+</body>
+</html>
